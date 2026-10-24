@@ -21,7 +21,5 @@ description: Legal documents of the WordTap app
 For questions about the app, your data or your subscription, write to [wordtapsupport@gmail.com](mailto:wordtapsupport@gmail.com).
 
 <div class="contact" markdown="1">
-ANDRII MELNYCHUK, Ukraine
-
 Email: [wordtapsupport@gmail.com](mailto:wordtapsupport@gmail.com)
 </div>

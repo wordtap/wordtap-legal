@@ -12,7 +12,7 @@ description: Terms of Use of the WordTap app
 
 ## 1. General
 
-1.1. These terms govern the use of the WordTap app (the "App") and are an agreement between you and ANDRII MELNYCHUK, Ukraine (the "Licensor", "we").
+1.1. These terms govern the use of the WordTap app (the "App") and are an agreement between you and the author of the App (the "Licensor", "we").
 
 1.2. By downloading, installing or using the App you confirm that you have read these terms and agree to them. If you do not agree, do not use the App.
 
@@ -100,7 +100,7 @@ description: Terms of Use of the WordTap app
 
 ## 11. Governing law and disputes
 
-11.1. These terms are governed by the law of Ukraine. We try to resolve disputes by negotiation; please contact us at the address below.
+11.1. We try to resolve disputes by negotiation: please write to the address at the end of this document. If a dispute cannot be resolved, it is decided under the law that applies.
 
 11.2. If you are a consumer living in an EU country or another country where consumer protection law does not allow a different governing law or court to be chosen, you keep the protection given by the mandatory provisions of the law of your country and the right to bring proceedings in the courts of your place of residence.
 
@@ -109,7 +109,5 @@ description: Terms of Use of the WordTap app
 ## 12. Contact
 
 <div class="contact" markdown="1">
-ANDRII MELNYCHUK, Ukraine
-
 Email: [wordtapsupport@gmail.com](mailto:wordtapsupport@gmail.com)
 </div>

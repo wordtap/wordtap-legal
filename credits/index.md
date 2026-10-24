@@ -31,7 +31,5 @@ description: Источники изображений и лицензии WordT
 ## Контакты
 
 <div class="contact" markdown="1">
-ANDRII MELNYCHUK, Украина
-
 Электронная почта: [wordtapsupport@gmail.com](mailto:wordtapsupport@gmail.com)
 </div>

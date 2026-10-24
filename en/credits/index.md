@@ -31,7 +31,5 @@ All images come from Wikimedia Commons and are released under the CC0 license or
 ## Contact
 
 <div class="contact" markdown="1">
-ANDRII MELNYCHUK, Ukraine
-
 Email: [wordtapsupport@gmail.com](mailto:wordtapsupport@gmail.com)
 </div>

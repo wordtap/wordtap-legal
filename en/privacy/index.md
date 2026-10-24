@@ -12,9 +12,9 @@ description: Privacy Policy of the WordTap app
 
 ## 1. Who processes your data
 
-1.1. The controller of personal data of users of the WordTap app (the "App") is ANDRII MELNYCHUK, an individual, Ukraine ("we", "us"). Our contact details are at the end of this document.
+1.1. The controller of personal data of users of the WordTap app (the "App") is the author of the App ("we", "us"). Our contact details are at the end of this document.
 
-1.2. We process data in accordance with the laws of Ukraine on personal data protection and, for users in the European Economic Area and the United Kingdom, also with regard to the General Data Protection Regulation (GDPR).
+1.2. We process data in accordance with applicable personal data protection law and, for users in the European Economic Area and the United Kingdom, also with regard to the General Data Protection Regulation (GDPR).
 
 ## 2. What data we process and why
 
@@ -75,7 +75,7 @@ description: Privacy Policy of the WordTap app
 
 7.3. For anything else, write to the address at the end of this document. We will reply within 30 days.
 
-7.4. If you believe we violate your rights, you may lodge a complaint with the data protection authority in your country. In Ukraine this is the Ukrainian Parliament Commissioner for Human Rights.
+7.4. If you believe we violate your rights, you may lodge a complaint with the data protection authority in your country.
 
 ## 8. Security
 
@@ -92,7 +92,5 @@ description: Privacy Policy of the WordTap app
 ## 11. Contact
 
 <div class="contact" markdown="1">
-ANDRII MELNYCHUK, Ukraine
-
 Email: [wordtapsupport@gmail.com](mailto:wordtapsupport@gmail.com)
 </div>

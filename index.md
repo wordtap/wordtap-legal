@@ -21,7 +21,5 @@ description: Правовые документы приложения WordTap
 По вопросам о приложении, данных и подписке напишите на [wordtapsupport@gmail.com](mailto:wordtapsupport@gmail.com).
 
 <div class="contact" markdown="1">
-ANDRII MELNYCHUK, Украина
-
 Электронная почта: [wordtapsupport@gmail.com](mailto:wordtapsupport@gmail.com)
 </div>
