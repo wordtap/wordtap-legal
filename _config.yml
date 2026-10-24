@@ -1,2 +1,8 @@
 title: WordTap
-theme: jekyll-theme-minimal
+url: "https://wordtap.github.io"
+baseurl: "/wordtap-legal"
+markdown: kramdown
+kramdown:
+  input: GFM
+exclude:
+  - README.md
