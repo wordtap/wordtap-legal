@@ -2,7 +2,7 @@
 layout: default
 lang: en
 title: Privacy Policy
-alt: /privacy/
+ref: privacy
 description: Privacy Policy of the WordTap app
 ---
 

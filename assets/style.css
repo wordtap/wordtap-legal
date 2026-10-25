@@ -40,7 +40,16 @@ body {
 nav { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; font-size: 15px; }
 nav a { color: var(--muted); text-decoration: none; }
 nav a:hover { color: var(--text); }
-nav a.lang { border: 1px solid var(--line); border-radius: 999px; padding: 2px 12px; color: var(--text); }
+.langsw { position: relative; }
+.langsw summary { list-style: none; cursor: pointer; border: 1px solid var(--line); border-radius: 999px; padding: 2px 12px; color: var(--text); user-select: none; }
+.langsw summary::-webkit-details-marker { display: none; }
+.langsw summary::after { content: ""; display: inline-block; width: 6px; height: 6px; margin: 0 0 3px 8px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg); }
+.langsw[open] summary::after { transform: rotate(225deg); margin-bottom: 0; }
+.langsw ul { position: absolute; right: 0; top: calc(100% + 8px); min-width: 160px; margin: 0; padding: 6px; list-style: none; background: var(--bg); border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14); z-index: 10; }
+.langsw li { margin: 0; }
+.langsw li a { display: block; padding: 7px 12px; border-radius: 8px; color: var(--text); }
+.langsw li a:hover { background: var(--soft); }
+.langsw li a.on { color: var(--accent); font-weight: 600; }
 
 .doc { padding-top: 34px; padding-bottom: 48px; }
 

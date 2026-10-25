@@ -2,7 +2,7 @@
 layout: default
 lang: en
 title: Credits and licenses
-alt: /credits/
+ref: credits
 description: Image sources and licenses of WordTap
 ---
 

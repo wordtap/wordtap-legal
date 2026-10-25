@@ -2,7 +2,7 @@
 layout: default
 lang: ru
 title: Политика конфиденциальности
-alt: /en/privacy/
+ref: privacy
 description: Политика конфиденциальности приложения WordTap
 ---
 

@@ -2,7 +2,7 @@
 layout: default
 lang: ru
 title: Документы
-alt: /en/
+ref: home
 description: Правовые документы приложения WordTap
 ---
 

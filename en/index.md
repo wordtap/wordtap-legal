@@ -2,7 +2,7 @@
 layout: default
 lang: en
 title: Documents
-alt: /
+ref: home
 description: Legal documents of the WordTap app
 ---
 

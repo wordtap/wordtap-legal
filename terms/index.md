@@ -2,7 +2,7 @@
 layout: default
 lang: ru
 title: Условия использования
-alt: /en/terms/
+ref: terms
 description: Условия использования приложения WordTap
 ---
 

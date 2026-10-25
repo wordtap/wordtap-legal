@@ -1,5 +1,21 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: 'ru' }}">
+{%- comment -%}
+  Языки сайта: ru лежит в корне, остальные в /en/, /fr/, /uk/.
+  У страницы есть `ref` (общий ключ перевода) и `lang`. Если перевода на нужный язык нет, ведём на английскую версию.
+{%- endcomment -%}
+{%- assign lang = page.lang | default: 'ru' -%}
+{%- assign codes = "ru,en,fr,uk" | split: "," -%}
+{%- assign names = "Русский,English,Français,Українська" | split: "," -%}
+{%- capture targets -%}
+{%- for code in codes -%}
+  {%- assign found = "" -%}
+  {%- for p in site.pages -%}{%- if p.ref == page.ref and p.lang == code -%}{%- assign found = p.url -%}{%- endif -%}{%- endfor -%}
+  {%- if found == "" -%}{%- for p in site.pages -%}{%- if p.ref == page.ref and p.lang == "en" -%}{%- assign found = p.url -%}{%- endif -%}{%- endfor -%}{%- endif -%}
+  {{ found | relative_url }}{% unless forloop.last %}|{% endunless %}
+{%- endfor -%}
+{%- endcapture -%}
+{%- assign urls = targets | split: "|" -%}
+<html lang="{{ lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,23 +23,58 @@
   <meta name="description" content="{{ page.description | default: 'WordTap' }}">
   <meta name="color-scheme" content="light dark">
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  <script>
+    // Язык сайта: сохранённый выбор, иначе язык браузера или устройства; нет такого перевода: английский
+    (function () {
+      var codes = [{% for c in codes %}"{{ c }}"{% unless forloop.last %},{% endunless %}{% endfor %}];
+      var urls = [{% for u in urls %}"{{ u }}"{% unless forloop.last %},{% endunless %}{% endfor %}];
+      var current = "{{ lang }}";
+      var want = null;
+      try { want = localStorage.getItem("wtLang"); } catch (e) {}
+      if (codes.indexOf(want) < 0) {
+        want = "en";
+        var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];
+        for (var i = 0; i < list.length; i++) {
+          var code = String(list[i]).toLowerCase().split("-")[0];
+          if (codes.indexOf(code) >= 0) { want = code; break; }
+        }
+      }
+      var target = urls[codes.indexOf(want)];
+      function norm(path) { return path.replace(/index\.html$/, "").replace(/\/?$/, "/"); }
+      if (want !== current && target && norm(target) !== norm(location.pathname)) {
+        location.replace(target + location.search + location.hash);
+      }
+    })();
+  </script>
 </head>
 <body>
-  {% assign ru = page.lang != 'en' %}
   <header class="top">
     <div class="wrap bar">
-      <a class="brand" href="{% if ru %}{{ '/' | relative_url }}{% else %}{{ '/en/' | relative_url }}{% endif %}">Word<span>Tap</span></a>
+      {%- for code in codes -%}{%- if code == lang -%}{%- assign home = urls[forloop.index0] -%}{%- endif -%}{%- endfor %}
+      <a class="brand" href="{{ home }}">Word<span>Tap</span></a>
       <nav>
-        {% if ru %}
-        <a href="{{ '/privacy/' | relative_url }}">Конфиденциальность</a>
-        <a href="{{ '/terms/' | relative_url }}">Условия</a>
-        <a href="{{ '/credits/' | relative_url }}">Авторы</a>
-        {% else %}
-        <a href="{{ '/en/privacy/' | relative_url }}">Privacy</a>
-        <a href="{{ '/en/terms/' | relative_url }}">Terms</a>
-        <a href="{{ '/en/credits/' | relative_url }}">Credits</a>
-        {% endif %}
-        {% if page.alt %}<a class="lang" href="{{ page.alt | relative_url }}">{% if ru %}English{% else %}Русский{% endif %}</a>{% endif %}
+        {%- case lang -%}
+        {%- when 'en' -%}{%- assign l_privacy = "Privacy" -%}{%- assign l_terms = "Terms" -%}{%- assign l_credits = "Credits" -%}
+        {%- when 'fr' -%}{%- assign l_privacy = "Confidentialité" -%}{%- assign l_terms = "Conditions" -%}{%- assign l_credits = "Crédits" -%}
+        {%- when 'uk' -%}{%- assign l_privacy = "Конфіденційність" -%}{%- assign l_terms = "Умови" -%}{%- assign l_credits = "Автори" -%}
+        {%- else -%}{%- assign l_privacy = "Конфиденциальность" -%}{%- assign l_terms = "Условия" -%}{%- assign l_credits = "Авторы" -%}
+        {%- endcase -%}
+        {%- assign nav_refs = "privacy,terms,credits" | split: "," -%}
+        {%- assign nav_labels = l_privacy | append: "|" | append: l_terms | append: "|" | append: l_credits | split: "|" -%}
+        {%- for ref in nav_refs -%}
+          {%- assign found = "" -%}
+          {%- for p in site.pages -%}{%- if p.ref == ref and p.lang == lang -%}{%- assign found = p.url -%}{%- endif -%}{%- endfor -%}
+          {%- if found == "" -%}{%- for p in site.pages -%}{%- if p.ref == ref and p.lang == "en" -%}{%- assign found = p.url -%}{%- endif -%}{%- endfor -%}{%- endif %}
+        <a href="{{ found | relative_url }}">{{ nav_labels[forloop.index0] }}</a>
+        {%- endfor %}
+        <details class="langsw">
+          <summary aria-label="Language">{{ lang | upcase }}</summary>
+          <ul>
+            {%- for code in codes %}
+            <li><a href="{{ urls[forloop.index0] }}" data-lang="{{ code }}"{% if code == lang %} class="on" aria-current="true"{% endif %}>{{ names[forloop.index0] }}</a></li>
+            {%- endfor %}
+          </ul>
+        </details>
       </nav>
     </div>
   </header>
@@ -35,5 +86,17 @@
   <footer class="wrap foot">
     <span>© 2026 WordTap</span>
   </footer>
+  <script>
+    // выбранный язык запоминается для следующих визитов
+    document.querySelectorAll(".langsw a[data-lang]").forEach(function (a) {
+      a.addEventListener("click", function () {
+        try { localStorage.setItem("wtLang", a.getAttribute("data-lang")); } catch (e) {}
+      });
+    });
+    document.addEventListener("click", function (e) {
+      var d = document.querySelector(".langsw");
+      if (d && d.open && !d.contains(e.target)) d.open = false;
+    });
+  </script>
 </body>
 </html>

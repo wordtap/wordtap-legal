@@ -2,7 +2,7 @@
 layout: default
 lang: en
 title: Terms of Use
-alt: /terms/
+ref: terms
 description: Terms of Use of the WordTap app
 ---
 

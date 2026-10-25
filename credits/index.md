@@ -2,7 +2,7 @@
 layout: default
 lang: ru
 title: Авторы и лицензии
-alt: /en/credits/
+ref: credits
 description: Источники изображений и лицензии WordTap
 ---
 
