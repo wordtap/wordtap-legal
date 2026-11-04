@@ -8,7 +8,7 @@ description: Terms of Use of the WordTap app
 
 # Terms of Use
 
-<p class="meta">WordTap app · version of 24 October 2026</p>
+<p class="meta">WordTap app · version of 4 November 2026</p>
 
 ## 1. General
 
@@ -42,9 +42,21 @@ description: Terms of Use of the WordTap app
 
 3.3. If you break these rules, we may restrict or end your access to the server side of the App.
 
+3.4. **Community rules.** WordTap has zero tolerance for objectionable content and abusive behavior. In usernames, profiles, direct messages and match chat it is forbidden to:
+
+- insult, bully or threaten other people;
+- promote hatred on any grounds;
+- post sexual, pornographic or violent content;
+- send spam or advertising;
+- pretend to be someone else or share other people's personal data.
+
+3.5. You can report a person or a message from the "…" menu in a profile or chat, or by long-pressing a message. You can block any user: they will no longer be able to message you or add you as a friend. We review reports within 24 hours, remove violating content and block offenders without notice.
+
 ## 4. Your content
 
-4.1. The words, notes and photos you add remain yours. You grant us the right to store them and show them to you in the App so that it works, including syncing them between your devices. Your content is not shown to other users.
+4.1. The words, notes and photos you add remain yours. You grant us the right to store them and show them to you in the App so that it works, including syncing them between your devices. Your words, notes and word photos are not shown to other users.
+
+4.1.1. Your public profile (username, avatar, XP, rewards) is visible to other users, and your messages are visible to the people you send them to. You grant us the right to show this content to them until it is deleted.
 
 4.2. You confirm that you have the rights to the photos and other content you upload and that it does not infringe the rights of third parties.
 

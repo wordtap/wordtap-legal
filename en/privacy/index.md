@@ -8,7 +8,7 @@ description: Privacy Policy of the WordTap app
 
 # Privacy Policy
 
-<p class="meta">WordTap app · version of 24 October 2026</p>
+<p class="meta">WordTap app · version of 4 November 2026</p>
 
 ## 1. Who processes your data
 
@@ -23,6 +23,12 @@ description: Privacy Policy of the WordTap app
 | Email address and user ID provided by Apple or Google when you sign in (with Sign in with Apple the address may be hidden) | Creating an account and signing in | Performance of a contract (the Terms of Use) |
 | Anonymous account identifier, if you use the App without signing in | Same | Performance of a contract |
 | Name and avatar, if you provide them | Showing your profile | Performance of a contract |
+| Username, avatar, XP, streak, rank and chosen rewards (frame, title, name style, theme) | Public profile and leaderboard: visible to other users | Performance of a contract |
+| Friends and friend requests, direct messages and reactions | Friends and chat: messages are visible to you and the person you talk to | Performance of a contract |
+| Match chat messages | Shown to match participants during the game. Not stored on the server | Performance of a contract |
+| Approximate location (coordinates rounded to about 1 km), only if you allow access | "People nearby" suggestions within 10 km. Your coordinates are never shown to others | Consent |
+| Device push notification token | Notifications about new messages | Performance of a contract |
+| Reports: who reported whom, the reason, comment and message text; the list of people you blocked | Moderation and user safety; making blocking work on all your devices | Legitimate interest in community safety |
 | Your words, translations, notes, photos attached to words, levels, statistics, streak, course progress, settings | Storing and syncing your data between devices | Performance of a contract |
 | Original transaction ID, product ID and subscription expiry date | Checking Premium on all your devices | Performance of a contract; our legitimate interest in preventing abuse |
 | A word or phrase you look up in the dictionary | Showing the translation and meaning | Performance of a contract |
@@ -31,7 +37,7 @@ description: Privacy Policy of the WordTap app
 
 2.1. We do not receive your payment details. Payments are handled by Apple. We only see the subscription status listed in the table.
 
-2.2. We do not collect data for advertising, do not use advertising identifiers, do not track you across other apps or websites, do not use analytics services and do not collect crash reports. We do not ask for access to your location, contacts, calendar or photo library. You choose the photos you attach to words yourself.
+2.2. We do not collect data for advertising, do not use advertising identifiers, do not track you across other apps or websites, do not use analytics services and do not collect crash reports. Location access is requested only for the optional "people nearby" feature. We do not ask for access to your contacts, calendar or photo library. You choose the photos you attach to words yourself.
 
 2.3. The App does not show ads and we do not sell data.
 
@@ -41,7 +47,7 @@ description: Privacy Policy of the WordTap app
 
 ## 4. Notifications
 
-4.1. Reminders and notifications about new articles are created by the App itself on your device (local notifications). They require your permission in the system. Notifications about news are off by default and can be turned on and off in the App settings. We do not collect push notification tokens.
+4.1. Reminders and notifications about new articles are created by the App itself on your device (local notifications). They require your permission in the system. Notifications about news are off by default and can be turned on and off in the App settings. For notifications about new messages, the App sends your device's push notification token to our server with your permission. Notifications are delivered by Apple (APNs). You can turn them off in iOS Settings.
 
 ## 5. Who receives data
 
@@ -53,6 +59,7 @@ description: Privacy Policy of the WordTap app
 | Apple | Data for Sign in with Apple, payments and subscriptions via the App Store; speech recognition (see section 3) | Sign-in, payments, recognition |
 | Google | Data for Sign in with Google | Sign-in |
 | Anthropic (USA) | The word and the sentence from the article; not your name, email address or user ID | Explaining the meaning of a word |
+| Other WordTap users | Your public profile (username, avatar, XP, rewards); your messages to friends you chat with | Social features |
 | dictionaryapi.dev, MyMemory (Translated) | The word or phrase you look up, not linked to your account | Dictionary and translation |
 
 5.2. We do not disclose data to anyone else, except where the law requires it.
@@ -64,6 +71,8 @@ description: Privacy Policy of the WordTap app
 6.1. Account data is kept as long as the account exists. After you delete the account, we delete your profile, words, photos, levels, statistics and subscription record from the server. Data may remain in the hosting provider's backups for a short time until the backups are overwritten.
 
 6.2. Data stored only on your device is removed when you delete the App.
+
+6.2.1. Reports are kept as long as needed for moderation and user safety, and after the reporter deletes their account they are kept without a link to it. Coordinates for "people nearby" stop being used after 30 days without an update and are deleted together with the account.
 
 6.3. Server technical logs are kept for the period set by the hosting provider.
 
