@@ -8,7 +8,7 @@ description: Источники изображений и лицензии WordT
 
 # Авторы и лицензии
 
-<p class="meta">Приложение WordTap · редакция от 24 октября 2026 г.</p>
+<p class="meta">Приложение WordTap · редакция от 4 ноября 2026 г.</p>
 
 ## Изображения в новостной ленте
 
@@ -27,6 +27,18 @@ description: Источники изображений и лицензии WordT
 | feed_gta6 | Miami waterfront skyline (Unsplash).jpg |
 | feed_ps5games | John-sting-112628.jpg |
 | feed_doomsday | Antique clock dial (Unsplash).jpg |
+
+## Анимированные эмодзи
+
+Анимированные стикеры: [Noto Animated Emoji](https://googlefonts.github.io/noto-emoji-animation/), © Google, лицензия [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Файлы уменьшены до 120 пикселей.
+
+## Видео в «Киноквизе»
+
+«Sintel» (2010) и «Tears of Steel» (2012), © Blender Foundation, [mango.blender.org](https://mango.blender.org) и [durian.blender.org](https://durian.blender.org), лицензия [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/). Используются фрагменты, реплики переведены и озвучены для изучения языков. Авторы указаны и на экране каждой сцены.
+
+## Аватарки соперников в играх
+
+Фото с [Unsplash](https://unsplash.com) (через Lorem Picsum), [лицензия Unsplash](https://unsplash.com/license). На фото нет людей: природа, животные, предметы.
 
 ## Контакты
 
